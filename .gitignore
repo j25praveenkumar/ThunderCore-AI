@@ -1,0 +1,108 @@
+# ============================================================
+# Thunder AI — .gitignore
+# ============================================================
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ─────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ── Environment Variables / Secrets ──────────────────────────
+.env
+.env.local
+.env.production
+*.secret
+
+# ── Database ─────────────────────────────────────────────────
+database/thunder.db
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── Thunder AI Runtime Files ──────────────────────────────────
+.deps_installed
+
+# ── Node.js / Frontend ───────────────────────────────────────
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ── Electron Build Output ─────────────────────────────────────
+frontend/dist/
+frontend/out/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.snap
+
+# ── npm ──────────────────────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
+
+# ── OS Generated ─────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── IDE / Editor ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ── AI Models (large binary files) ───────────────────────────
+models/
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+# ── Python Cache (pycache already covered, but extra safety) ──
+*.cache
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# ── Test / Coverage ──────────────────────────────────────────
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# ── Windows specific ─────────────────────────────────────────
+*.lnk
